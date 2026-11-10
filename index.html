@@ -2,14 +2,14 @@
 Requirements
 [ ] Three Distinct CSS font-family Declarations
 [ ] Five CSS Rules
-[ ] An Unordered **or** Ordered List (<ul> or <ol>)
-[ ] Three Images
+[done] An Unordered **or** Ordered List (<ul> or <ol>)
+[done] Three Images
 
 Select ONE Additional Feature to Add  
 [ no ] Feature 1 - Fill Text with Image Background 
 [ no ] Feature 2 - Change the <li> markers
 [ no ] Feature 3 - Change the Favicon
-[ no ] Feature 4 - Use Google Font or Uploaded Font
+[done] Feature 4 - Use Google Font or Uploaded Font
 [ no ] Feature 5 - Change the Cursor
 -->
 
@@ -28,40 +28,50 @@ Select ONE Additional Feature to Add
       yellow: rgb(255,234,147)\
       red: rgb (217,0,0)
       green: rgb(141, 179, 85)
-      black:  */
+      black: (0,0,0)  */
 
     body {
       background-color: rgb(255, 234, 147);
-    }
-
-    .heading {
       color: rgb(217, 0, 0);
       font-family: "limelight", serif;
     }
+
+    li::marker {
+      content:"⭐";
+      color: rgb(217,0,0);
+    }
+    
+    
 
   </style>
 </head>
 <body>
 
-  <h1 class="heading">Lila's Local Spots</h1>
+  <h1>Lila's PIZZA Guide</h1>
 
-  <h2 class="heading">Favorite Food Spots</h3>
+  <h2>Lila's Fav New York Pizza Places:</h2>
+
+    <h3>Koronet Pizza</h3>
+    <p><em>Location: Morningside Heights</em></p>
+    <img src="https://mywalkinmanhattan.com/wp-content/uploads/2019/12/koronet-pizza-front.jpg?w=584" height="200">
+    <img src="https://media-cdn.tripadvisor.com/media/photo-s/0c/bd/82/f1/koronet-pizzeria.jpg" height="200">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJQ0Pkp3u46tSHXJphUwkwasMjB4mLKmLW-tuguAD3Eg&s" height="200">
+
+    <p>Best Slices:</p>
+    <ol>
+      <li>Jumbo Cheese Slice</li>
+      <li>Jumbo Vodka Sauce Slice</li>
+      <li>Pasta Slice</li>
+    </ol>
+
+  <h2>Lila's Fav Fancy Pizza Places:</h2>
   
-  <h3 class="heading"></h3>
+  <h3>Sotto Casa Pizzeria</h3>
+    <img src="https://uptownguide.org/wp-content/uploads/2020/12/sottocasa-harlem-outdoors.jpg" height="200">
+    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/31/60/5f/photo0jpg.jpg?w=1200&h=-1&s=1" height="200">
+    <img src="https://s3-media0.fl.yelpcdn.com/bphoto/YuMO59Es9JB4Qr3Wdd47KQ/348s.jpg" height="200">
 
-
-  <p>About Content Element #1</p>
-  <br><br>
-
-  <h2 class="heading">Favorite Shopping Spots</h3>
  
-  <p>About Content Element #2</p>
-  <br><br>
-
-  <h2 class="heading">Other Favorites</h3>
-  
-  <p>About Content Element #3</p>
-  <br><br>
 
 </body>
 </html>
