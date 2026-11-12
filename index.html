@@ -1,7 +1,7 @@
 <!--Unit 4 Project
 Requirements
 [ ] Three Distinct CSS font-family Declarations
-[ ] Five CSS Rules
+[done] Five CSS Rules
 [done] An Unordered **or** Ordered List (<ul> or <ol>)
 [done] Three Images
 
@@ -20,6 +20,7 @@ Select ONE Additional Feature to Add
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
   <title>Unit 4 Project</title>
   <meta charset="utf-8">
   <style>
@@ -33,7 +34,28 @@ Select ONE Additional Feature to Add
     body {
       background-color: rgb(255, 234, 147);
       color: rgb(217, 0, 0);
+    }
+
+    .ny {
       font-family: "limelight", serif;
+    }
+
+    .fancy {
+      font-family: "Imperial Script", cursive;
+      font-weight: 600;
+      font-style: normal;
+    }
+
+    .heading {
+      text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px rgb(255, 255, 255), 5px 5px 0 #ffffff;
+      
+      display: inline-block;
+      width: 450px;
+      margin: 5% auto;
+      border-radius: 225px 15px 225px 15px/15px 225px 15px 225px;
+      padding: 1em;
+      line-height: 1em;
+      background-image: url(https://americanjane.com/images/products/562-green-checkerboard-2166614-1.jpg)
     }
 
     li::marker {
@@ -41,15 +63,25 @@ Select ONE Additional Feature to Add
       color: rgb(217,0,0);
     }
     
-    
+    h2 {
+      font-size: 30px;
+    }
 
+    h3 {
+      font-size: 25px;
+    }
+
+    p {
+      font-size: 20px;
+    }
   </style>
 </head>
 <body>
 
-  <h1>Lila's PIZZA Guide</h1>
+  <h1 class="heading">Lila's PIZZA Guide</h1>
 
-  <h2>Fav New York Pizza Places:</h2>
+  <div class="ny">
+    <h2 class="heading">Fav New York Pizza Places</h2>
 
     <h3>Koronet Pizza</h3>
     <p><em>Location: Morningside Heights</em></p>
@@ -65,23 +97,36 @@ Select ONE Additional Feature to Add
     </ol>
 
 
-  <h3>Smiling Pizza</h3>
-  <p><em>Location: Park Slope</em></p>
-  <img src="https://images.squarespace-cdn.com/content/v1/5dadafb7c0e45245a9c9ae7c/1616000803548-E59MRQL8IS92IDS7W1S6/Smiling-Pizza-Brooklyn-1600x900.jpeg" height="200">
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-V5CjJhe2gH_QTIi_FsPGtoPSjXak5rLdZrczCswuYNvE7boLgaq3rNJ7&s=10" height="200">
-  <img src="https://s3-media0.fl.yelpcdn.com/bphoto/tTAvbvFoMayYRuTGj9NuUQ/l.jpg" height="200">
+    <h3>Smiling Pizza</h3>
+    <p><em>Location: Park Slope</em></p>
+    <img src="https://images.squarespace-cdn.com/content/v1/5dadafb7c0e45245a9c9ae7c/1616000803548-E59MRQL8IS92IDS7W1S6/Smiling-Pizza-Brooklyn-1600x900.jpeg" height="200">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-V5CjJhe2gH_QTIi_FsPGtoPSjXak5rLdZrczCswuYNvE7boLgaq3rNJ7&s=10" height="200">
+    <img src="https://s3-media0.fl.yelpcdn.com/bphoto/tTAvbvFoMayYRuTGj9NuUQ/l.jpg" height="200">
     <p>Best Slices at Smiling Pizza:</p>
     <ol>
       <li></li>
     </ol>
 
+    <h3>Fini Pizza</h3>
+    <p><em>Location: Williamsburg</em></p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMyEHAka8jTRj-BTCk08su5fA25Lj1QzXH7xRIXJdRtF8gbIDbmHXfjSc&s=10" height="200">
+    <img src="https://tb-static.uber.com/prod/image-proc/processed_images/ee4c28a9d1eff697197afb31e2511ec7/0c09274e3b12c8246a05970e1ef9d835.jpeg" height="200">
+    <img src="https://eatthisny.com/wp-content/uploads/2025/01/IMG_1027.jpg" height="200">
+    <p>Best Slices at Fini Pizza</p>
+    <ol>
+      <li>Pepperoni Slice</li>
+    </ol>
+    <p>Recomended by Zapata</p>
+</div>
+
+<div class="fancy">
   <h2>Fav Fancy Pizza Places:</h2>
   
   <h3>Sotto Casa Pizzeria</h3>
     <img src="https://uptownguide.org/wp-content/uploads/2020/12/sottocasa-harlem-outdoors.jpg" height="200">
     <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/31/60/5f/photo0jpg.jpg?w=1200&h=-1&s=1" height="200">
     <img src="https://s3-media0.fl.yelpcdn.com/bphoto/YuMO59Es9JB4Qr3Wdd47KQ/348s.jpg" height="200">
-
+</div>
  
 
 </body>
