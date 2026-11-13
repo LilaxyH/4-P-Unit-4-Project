@@ -34,6 +34,29 @@ Select ONE Additional Feature to Add
     body {
       background-color: rgb(255, 234, 147);
       color: rgb(217, 0, 0);
+      margin: auto;
+      text-align: center;
+    }
+
+    #main_heading {
+      font-family: "limelight", serif;
+      font-size: 3em;
+      
+      text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px rgb(255, 255, 255), 5px 5px 0 #ffffff;
+
+      margin: auto;
+      
+      display: inline-block;
+      width: 450px;
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      border-radius: 225px 15px 225px 15px/15px 225px 15px 225px;
+      padding: 1em;
+      line-height: 1em;
+      background-image: url(https://americanjane.com/images/products/562-green-checkerboard-2166614-1.jpg)
     }
 
     .ny {
@@ -43,7 +66,7 @@ Select ONE Additional Feature to Add
     .fancy {
       font-family: "Imperial Script", cursive;
       font-weight: 600;
-      font-style: normal;
+      font-size: 1.5em;
     }
 
     .heading {
@@ -51,7 +74,11 @@ Select ONE Additional Feature to Add
       
       display: inline-block;
       width: 450px;
-      margin: 5% auto;
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
       border-radius: 225px 15px 225px 15px/15px 225px 15px 225px;
       padding: 1em;
       line-height: 1em;
@@ -78,7 +105,7 @@ Select ONE Additional Feature to Add
 </head>
 <body>
 
-  <h1 class="heading">Lila's PIZZA Guide</h1>
+  <h1 id="main_heading">Lila's PIZZA Guide</h1>
 
   <div class="ny">
     <h2 class="heading">Fav New York Pizza Places</h2>
@@ -104,7 +131,7 @@ Select ONE Additional Feature to Add
     <img src="https://s3-media0.fl.yelpcdn.com/bphoto/tTAvbvFoMayYRuTGj9NuUQ/l.jpg" height="200">
     <p>Best Slices at Smiling Pizza:</p>
     <ol>
-      <li></li>
+      <li>Cheese Slice</li>
     </ol>
 
     <h3>Fini Pizza</h3>
@@ -120,12 +147,21 @@ Select ONE Additional Feature to Add
 </div>
 
 <div class="fancy">
-  <h2>Fav Fancy Pizza Places:</h2>
+  <h2>Favorite Fancy Pizza Places:</h2>
   
   <h3>Sotto Casa Pizzeria</h3>
     <img src="https://uptownguide.org/wp-content/uploads/2020/12/sottocasa-harlem-outdoors.jpg" height="200">
     <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/31/60/5f/photo0jpg.jpg?w=1200&h=-1&s=1" height="200">
     <img src="https://s3-media0.fl.yelpcdn.com/bphoto/YuMO59Es9JB4Qr3Wdd47KQ/348s.jpg" height="200">
+
+  <p>Best Pizza's (and food) at Sotto Casa</p>
+    <ol>
+      <li>Margarita Pizza</li>
+      <li>Gluten Free Pizza</li>
+      <li>White Pizza with Proscuito</li>
+      <li>Cannolis</li>
+      <li>Nutella Pizza</li>
+    </ol>
 </div>
  
 
