@@ -1,13 +1,13 @@
 <!--Unit 4 Project
 Requirements
-[ ] Three Distinct CSS font-family Declarations
+[done] Three Distinct CSS font-family Declarations
 [done] Five CSS Rules
 [done] An Unordered **or** Ordered List (<ul> or <ol>)
 [done] Three Images
 
 Select ONE Additional Feature to Add  
 [ no ] Feature 1 - Fill Text with Image Background 
-[ no ] Feature 2 - Change the <li> markers
+[done] Feature 2 - Change the <li> markers
 [ no ] Feature 3 - Change the Favicon
 [done] Feature 4 - Use Google Font or Uploaded Font
 [ no ] Feature 5 - Change the Cursor
@@ -21,6 +21,8 @@ Select ONE Additional Feature to Add
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
+
   <title>Unit 4 Project</title>
   <meta charset="utf-8">
   <style>
@@ -36,10 +38,12 @@ Select ONE Additional Feature to Add
       color: rgb(217, 0, 0);
       margin: auto;
       text-align: center;
+      list-style-position: inside;
     }
 
     #main_heading {
-      font-family: "limelight", serif;
+      font-family: "Ultra", serif;
+      font-weight: 400;
       font-size: 3em;
       
       text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px rgb(255, 255, 255), 5px 5px 0 #ffffff;
@@ -47,7 +51,7 @@ Select ONE Additional Feature to Add
       margin: auto;
       
       display: inline-block;
-      width: 450px;
+      width: 1500px;
       
       display: flex;
       justify-content: center;
@@ -75,6 +79,8 @@ Select ONE Additional Feature to Add
       display: inline-block;
       width: 450px;
       
+      margin: auto;
+
       display: flex;
       justify-content: center;
       align-items: center;
@@ -88,6 +94,7 @@ Select ONE Additional Feature to Add
     li::marker {
       content:"⭐";
       color: rgb(217,0,0);
+      margin: auto;
     }
     
     h2 {
